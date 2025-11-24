@@ -6,7 +6,7 @@ const Breadcrumb = ({ paths }) => {
       <div className='l-container--large'>
         <ul>
           <li>
-            <Link href='/'>トップ</Link>
+            <Link href='/'>Home</Link>
           </li>
           {paths.map(({ href, label }, idx) => (
             <li key={`${idx}_${label}`}>

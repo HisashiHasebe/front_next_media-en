@@ -18,7 +18,7 @@ export default async function Page() {
         <section className='l-container--large l-container--contents'>
           <div className='u-display-flex u-display-flex-align-items-center u-mb-40'>
             <div className='u-display-flex-grow-1'>
-              <h2 className='c-heading--lv1'>新着情報</h2>
+              <h2 className='c-heading--lv1'>New Articles</h2>
               <p className='c-heading--sub'>New articles</p>
             </div>
             <div className='u-display-flex-shrink-0'>

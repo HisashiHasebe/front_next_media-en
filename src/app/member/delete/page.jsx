@@ -50,15 +50,15 @@ export default function Page() {
   return (
     <main className='l-container'>
       <Metadata title={METADATA.MEMBER_DELETE} />
-      <Breadcrumb paths={[{ label: '退会' }]} />
+      <Breadcrumb paths={[{ label: 'Delete Account' }]} />
       <main>
-        <PageTitle title='退会' subTitle='Unsubscribe' />
+        <PageTitle title='Delete Account' subTitle='Unsubscribe' />
         <div className='l-container--col-2 l-container--contents'>
           <main className='l-container--col-2__main'>
             <form className='c-form' onSubmit={handleSubmit}>
               <div className='c-form-group'>
                 <dl>
-                  <dt className='c-form-label'>名前</dt>
+                  <dt className='c-form-label'>Name</dt>
                   {memberInfo && (
                     <dd>
                       {memberInfo.name1} {memberInfo.name2}
@@ -68,16 +68,16 @@ export default function Page() {
               </div>
               <div className='c-form-group'>
                 <dl>
-                  <dt className='c-form-label'>メールアドレス</dt>
+                  <dt className='c-form-label'>Email Address</dt>
                   {memberInfo && <dd>{memberInfo.email}</dd>}
                 </dl>
               </div>
               {alert ? (
                 <div>
-                  <AlertSuccess message='退会が完了しました' />
+                  <AlertSuccess message='Account deletion completed' />
                   <div className='c-form-group u-text-align-center'>
                     <Link href='/' className=''>
-                      トップへ戻る
+                      Back to Home
                     </Link>
                   </div>
                 </div>
@@ -85,8 +85,8 @@ export default function Page() {
                 <div>
                   <div className='c-form-group u-text-align-center'>
                     <p>
-                      本当に退会してよろしいですか？<br></br>
-                      退会の処理が完了すると自動的にログアウトします。
+                      Are you sure you want to delete your account?<br></br>
+                      Once the deletion process is complete, you will be automatically logged out.
                     </p>
                   </div>
                   <div className='c-form-group u-text-align-center'>
@@ -94,12 +94,12 @@ export default function Page() {
                       type='submit'
                       className='c-button--primary u-width-50'
                     >
-                      退会
+                      Delete Account
                     </button>
                   </div>
                   <div className='c-form-group u-text-align-center'>
                     <Link href='/member/mypage' className=''>
-                      マイページへ戻る
+                      Back to My Page
                     </Link>
                   </div>
                 </div>

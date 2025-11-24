@@ -52,14 +52,14 @@ export default function Page() {
   return (
     <main className='l-container'>
       <Metadata title={METADATA.MEMBER_MYPAGE} />
-      <Breadcrumb paths={[{ label: 'マイページ' }]} />
-      <PageTitle title='マイページ' subTitle='My page' />
+      <Breadcrumb paths={[{ label: 'My Page' }]} />
+      <PageTitle title='My Page' subTitle='My page' />
       <div className='l-container--col-2 l-container--contents'>
         <div className='l-container--col-2__main'>
           {/* Member only content */}
           <section>
             <div className='c-heading--border-horizontal'>
-              <h2 className='c-heading--lv3 u-mb-0'>今月の会員限定記事</h2>
+              <h2 className='c-heading--lv3 u-mb-0'>This Month's Members-Only Articles</h2>
             </div>
             <ul className='c-media-list c-media-list--col-2'>
               {limitedContent &&
@@ -97,11 +97,11 @@ export default function Page() {
             </ul>
           </section>
           <section className='c-favoriteList l-container--contents'>
-            <h2 className='c-heading--lv1'>お気に入り記事</h2>
+            <h2 className='c-heading--lv1'>Favorite Articles</h2>
             <p className='c-heading--sub'>Favorite articles</p>
             <div className='u-mt-40'>
               {myFavorites.length === 0 ? (
-                <p>お気に入り記事はありません。</p>
+                <p>You have no favorite articles.</p>
               ) : (
                 <CardList data={myFavorites} />
               )}

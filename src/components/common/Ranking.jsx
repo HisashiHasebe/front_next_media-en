@@ -25,7 +25,7 @@ export default function Ranking() {
     <section className='u-bg-white'>
       <div className='l-container--large l-container--contents'>
         <div className='c-heading--border-horizontal u-display-flex-wrap'>
-          <h2 className='c-heading--lv3 u-mb-0'>ランキング</h2>
+          <h2 className='c-heading--lv3 u-mb-0'>Ranking</h2>
         </div>
         <ul className='c-media-list c-media-list--col-2'>
           {data &&

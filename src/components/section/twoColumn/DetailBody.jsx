@@ -88,9 +88,9 @@ const DetailBody = ({ data, params }) => {
               <></>
             ) : (
               <span className='c-favorite__desc'>
-                ログインすると
+                Login to add
                 <br />
-                お気に入りできます
+                to favorites
               </span>
             )}
             <button

@@ -25,7 +25,7 @@ export default function Article({ children }) {
     if (searchParams.get('topic')) {
       setContent('');
       setSearchKeyWord('');
-      setTitle('記事');
+      setTitle('Articles');
     } else if (searchParams.get('search')) {
       setContent(contentDirectory.search);
       setSearchKeyWord(searchParams.get('search'));
@@ -62,11 +62,11 @@ export default function Article({ children }) {
 
   function renderListTitle() {
     if (searchKeyWord) {
-      return `「${searchKeyWord}」の${content.title}`;
+      return `${content.title} for "${searchKeyWord}"`;
     } else if (content) {
       return `${content.title}`;
     } else {
-      return `${categoryTitle} ${title}一覧`;
+      return `${categoryTitle} ${title} List`;
     }
   }
 
@@ -99,7 +99,7 @@ export default function Article({ children }) {
                   <div className='c-spinner__circle'></div>
                 </div>
               )}
-              {list?.length === 0 && <p>記事がありません。</p>}
+              {list?.length === 0 && <p>No articles found.</p>}
               {list?.length > 0 && (
                 <>
                   <CardList data={list} />

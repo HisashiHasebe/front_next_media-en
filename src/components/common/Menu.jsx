@@ -19,7 +19,7 @@ const Menu = () => {
   };
   return (
     <div>
-      <h2 className='c-heading--lv3 is-sp'>会員メニュー</h2>
+      <h2 className='c-heading--lv3 is-sp'>Member Menu</h2>
       <nav className='l-side__nav'>
         <ul className='l-side__nav__list'>
           <li className='l-side__nav__list__item'>
@@ -27,7 +27,7 @@ const Menu = () => {
               href='/member/mypage'
               className='c-button u-display-flex u-display-flex-justify-content-between u-width-100'
             >
-              マイページトップ
+              My Page
             </Link>
           </li>
           <li className='l-side__nav__list__item'>
@@ -35,7 +35,7 @@ const Menu = () => {
               href='/member/edit'
               className='c-button u-display-flex u-display-flex-justify-content-between u-width-100'
             >
-              会員情報の更新
+              Update Account Information
             </Link>
           </li>
           <li className='l-side__nav__list__item'>
@@ -43,7 +43,7 @@ const Menu = () => {
               href='/member/delete'
               className='c-button u-display-flex u-display-flex-justify-content-between u-width-100'
             >
-              退会
+              Delete Account
             </Link>
           </li>
           <li className='l-side__nav__list__item'>
@@ -83,7 +83,7 @@ const Menu = () => {
                     strokeLinejoin='round'
                   ></path>
                 </svg>
-                <span className='u-ml-5 u-mr-5'>ログアウト</span>
+                <span className='u-ml-5 u-mr-5'>Logout</span>
               </span>
             </button>
           </li>

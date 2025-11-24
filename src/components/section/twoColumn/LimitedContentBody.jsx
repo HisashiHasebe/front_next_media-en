@@ -37,7 +37,7 @@ const LimitedContentBody = () => {
   return (
     <>
       <div className='c-heading--border-horizontal'>
-        <p className='c-heading--lv3 u-mt-0 u-mb-0'>今月の会員限定記事</p>
+        <p className='c-heading--lv3 u-mt-0 u-mb-0'>This Month's Members-Only Articles</p>
       </div>
       <article className='c-article u-mt-0'>
         <Metadata title={METADATA.LIMITED_CONTENT} />
@@ -67,7 +67,7 @@ const LimitedContentBody = () => {
             </p>
             <p className='u-mt-0 u-mb-0'>
               <Link href={`${couponLink.url}`} target='_blnak'>
-                お得なクーポン詳細はこちら
+                View coupon details
               </Link>
             </p>
           </div>

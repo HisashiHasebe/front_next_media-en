@@ -12,7 +12,7 @@ export default function Error({ error }) {
   return (
     <main className='c-error'>
       <h2>Error</h2>
-      <p>予期せぬエラーが発生しました。</p>
+      <p>An unexpected error occurred.</p>
       <Link href='/' className='c-button'>
         TOP
       </Link>

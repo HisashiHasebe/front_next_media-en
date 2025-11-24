@@ -23,8 +23,8 @@ export async function generateStaticParams() {
 export default function Page() {
   return (
     <main className='l-container'>
-      <Breadcrumb paths={[{ label: '会員限定記事' }]} />
-      <PageTitle title='会員限定記事' subTitle='Member Only Article' />
+      <Breadcrumb paths={[{ label: 'Members-Only Article' }]} />
+      <PageTitle title='Members-Only Article' subTitle='Member Only Article' />
       <div className='l-container--col-2 l-container--contents'>
         <div className='l-container--col-2__main'>
           <LimitedContentBody />

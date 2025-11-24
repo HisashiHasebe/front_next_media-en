@@ -106,22 +106,22 @@ const Header = () => {
               <div onClickCapture={handleNavClose}>
                 {user ? (
                   <div className='l-header__nav__options'>
-                    {/* ログイン時 */}
+                    {/* Logged in */}
                     <p className='is-sp c-text--small u-mt-0'>
-                      ようこそ！{user.name1} さん
+                      Welcome, {user.name1}!
                     </p>
                     <Link
                       href='/member/mypage/'
                       className='l-header__nav__options__button c-button'
                     >
-                      マイページ
+                      My Page
                     </Link>
                     <button
                       type='button'
                       className='-logout l-header__nav__options__button u-display-flex u-display-flex-align-items-center'
                       onClick={handleLogout}
                     >
-                      ログアウト
+                      Logout
                       <svg
                         width='16'
                         height='16'
@@ -155,12 +155,12 @@ const Header = () => {
                   </div>
                 ) : (
                   <div className='l-header__nav__options'>
-                    {/* 未ログイン */}
+                    {/* Not logged in */}
                     <Link
                       href='/login/'
                       className='l-header__nav__options__button u-display-flex u-display-flex-align-items-center'
                     >
-                      ログイン
+                      Login
                       <svg
                         width='16'
                         height='16'
@@ -195,7 +195,7 @@ const Header = () => {
                       href='/register/'
                       className='l-header__nav__options__button c-button -regist'
                     >
-                      会員登録
+                      Sign Up
                     </Link>
                   </div>
                 )}

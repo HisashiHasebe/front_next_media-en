@@ -29,7 +29,7 @@ export default function AlertError({ errors, message }) {
           </svg>
         </div>
         <div>
-          <p className='c-alert__heading'>エラーが発生しました</p>
+          <p className='c-alert__heading'>An error occurred</p>
           <p className='c-alert__message'>{message}</p>
           <p className='c-alert__message'>
             {errors?.map((item, index) => (

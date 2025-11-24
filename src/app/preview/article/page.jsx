@@ -34,7 +34,7 @@ function PreviewArticle() {
             href: `/article?topic=${info.contents_type_nm.toLowerCase()}`,
             label: info.contents_type_ext_col_01,
           },
-          { label: '記事詳細' },
+          { label: 'Article Details' },
         ]);
         setParams({
           id: info.topics_id,

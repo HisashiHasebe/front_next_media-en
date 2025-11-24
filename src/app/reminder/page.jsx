@@ -56,8 +56,8 @@ export default function Page() {
   return (
     <main className='l-container'>
       <Metadata title={METADATA.REMINDER} />
-      <Breadcrumb paths={[{ label: 'パスワード再発行' }]} />
-      <PageTitle title='パスワード再発行' subTitle='Password Reset' />
+      <Breadcrumb paths={[{ label: 'Password Reset' }]} />
+      <PageTitle title='Password Reset' subTitle='Password Reset' />
       <div className='l-container--small l-container--contents'>
         <div>
           {alert && <AlertSuccess message={alertMessage} />}
@@ -65,7 +65,7 @@ export default function Page() {
             <form className='c-form' onSubmit={handleReset}>
               <div className='c-form-group'>
                 <label htmlFor='email' className='c-form-label'>
-                  仮パスワード
+                  Temporary Password
                 </label>
                 <input
                   name='temp_password'
@@ -76,7 +76,7 @@ export default function Page() {
               </div>
               <div className='c-form-group'>
                 <label htmlFor='password' className='c-form-label'>
-                  パスワード
+                  Password
                 </label>
                 <input
                   name='password'
@@ -86,11 +86,11 @@ export default function Page() {
                 />
               </div>
               <div className='c-form-group'>
-                <button className='c-button--primary u-width-100'>送信</button>
+                <button className='c-button--primary u-width-100'>Submit</button>
               </div>
               <div className='c-form-group u-text-align-center'>
                 <Link href='/login' className='nuxt-link-active'>
-                  ログイン
+                  Login
                 </Link>
               </div>
             </form>
@@ -101,20 +101,20 @@ export default function Page() {
               onChange={handleChange}
             >
               <div className='c-form-group'>
-                <p>パスワードリセットのメールを送信します。</p>
+                <p>We will send a password reset email.</p>
               </div>
               <div className='c-form-group'>
                 <label htmlFor='email' className='c-form-label'>
-                  メールアドレス
+                  Email Address
                 </label>
                 <input name='email' type='email' id='email' ref={mail} />
               </div>
               <div className='c-form-group'>
-                <button className='c-button--primary u-width-100'>送信</button>
+                <button className='c-button--primary u-width-100'>Submit</button>
               </div>
               <div className='c-form-group u-text-align-center'>
                 <Link href='/login' className='nuxt-link-active'>
-                  ログイン
+                  Login
                 </Link>
               </div>
             </form>

@@ -8,11 +8,11 @@ export const category = {
 
 export const contentDirectory = {
   article: {
-    title: '記事',
+    title: 'Articles',
     subtitle: 'ARTICLE',
   },
   search: {
-    title: '検索結果',
+    title: 'Search Results',
     subtitle: 'SEARCH',
   },
 };

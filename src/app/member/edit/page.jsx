@@ -74,8 +74,8 @@ export default function Page() {
   return (
     <main className='l-container'>
       <Metadata title={METADATA.MEMBER_UPDATE} />
-      <Breadcrumb paths={[{ label: '会員情報' }]} />
-      <PageTitle title='会員情報' subTitle='Edit Profile' />
+      <Breadcrumb paths={[{ label: 'Account Information' }]} />
+      <PageTitle title='Account Information' subTitle='Edit Profile' />
       <div className='l-container--col-2 l-container--contents'>
         <div className='l-container--col-2__main'>
           <form
@@ -87,7 +87,7 @@ export default function Page() {
             {errorAlert && <AlertError errors={alertMessage} />}
             <div className='c-form-group'>
               <label htmlFor='name1' className='c-form-label'>
-                名前（姓）
+                Last Name
               </label>
               <span className='c-form-label__required'>*</span>
               {memberInfo && (
@@ -102,7 +102,7 @@ export default function Page() {
             </div>
             <div className='c-form-group'>
               <label htmlFor='name2' className='c-form-label'>
-                名前（名）
+                First Name
               </label>
               {memberInfo && (
                 <input
@@ -116,7 +116,7 @@ export default function Page() {
             </div>
             <div className='c-form-group'>
               <label htmlFor='email' className='c-form-label'>
-                メールアドレス
+                Email Address
               </label>
               {memberInfo && (
                 <input
@@ -131,7 +131,7 @@ export default function Page() {
               <div className='u-display-flex'>
                 <div className='u-display-flex-grow-1'>
                   <label htmlFor='current_password' className='c-form-label'>
-                    現在のパスワード
+                    Current Password
                   </label>
                 </div>
               </div>
@@ -146,10 +146,10 @@ export default function Page() {
               <div className='u-display-flex'>
                 <div className='u-display-flex-grow-1'>
                   <label htmlFor='login_pwd' className='c-form-label'>
-                    新しいパスワード
+                    New Password
                   </label>
                 </div>
-                <p className='u-ma-0 c-text--small'>半角英数8文字以上</p>
+                <p className='u-ma-0 c-text--small'>At least 8 alphanumeric characters</p>
               </div>
               <input
                 name='login_pwd'
@@ -160,12 +160,12 @@ export default function Page() {
             </div>
             <div className='c-form-group u-text-align-center'>
               <button type='submit' className='c-button--primary u-width-50'>
-                更新する
+                Update
               </button>
             </div>
             <div className='c-form-group u-text-align-center'>
               <Link href='/member/mypage' className=''>
-                マイページへ戻る
+                Back to My Page
               </Link>
             </div>
           </form>

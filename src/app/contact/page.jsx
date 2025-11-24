@@ -171,7 +171,7 @@ export default function Page() {
     }
 
     if (!conditionCheck) {
-      errors.push({ message: '利用規約に同意してください' });
+      errors.push({ message: 'Please agree to the terms of service' });
     }
 
     Object.entries(requiredFields).forEach(([field, title]) => {
@@ -199,9 +199,9 @@ export default function Page() {
   return (
     <main className='l-container'>
       <Metadata title={METADATA.CONTACT} />
-      <Breadcrumb paths={[{ label: 'お問い合わせ' }]} />
+      <Breadcrumb paths={[{ label: 'Contact' }]} />
 
-      <PageTitle title='お問い合わせ' subTitle='Contact' />
+      <PageTitle title='Contact' subTitle='Contact' />
       <div className='l-container--small l-container--contents'>
         {submittedText ? (
           <div>
@@ -214,7 +214,7 @@ export default function Page() {
               <p className='c-text c-text--pre u-ma-0'>{description}</p>
               <p className='c-text--small'>
                 <span className='c-form-label__required'>*</span>
-                は必須項目です。
+                {' '}indicates required fields.
               </p>
             </div>
             <form className='c-form' onSubmit={handleSubmit}>
@@ -267,8 +267,8 @@ export default function Page() {
                       id={col.key}
                       onChange={handleInputChange}
                     >
-                      <option label='選択なし' value=''>
-                        選択なし
+                      <option label='Please select' value=''>
+                        Please select
                       </option>
                       {col.options.map((option) => (
                         <option key={option.key} value={option.key}>
@@ -299,8 +299,8 @@ export default function Page() {
                   {col.type === 6 && (
                     <div className='u-display-flex u-display-flex-align-items-center'>
                       <select name='year' onChange={handleDateChange}>
-                        <option label='選択なし' value=''>
-                          選択なし
+                        <option label='Please select' value=''>
+                          Please select
                         </option>
                         {Array.from(
                           {
@@ -317,11 +317,11 @@ export default function Page() {
                         ))}
                       </select>
                       <label htmlFor={col.key + '_year'} className='u-pa-10'>
-                        年
+                        Year
                       </label>
                       <select name='month' onChange={handleDateChange}>
-                        <option label='選択なし' value=''>
-                          選択なし
+                        <option label='Please select' value=''>
+                          Please select
                         </option>
                         {Array.from({ length: 12 }, (_, i) => i + 1).map(
                           (number) => (
@@ -335,11 +335,11 @@ export default function Page() {
                         )}
                       </select>
                       <label htmlFor={col.key + '_month'} className='u-pa-10'>
-                        月
+                        Month
                       </label>
                       <select name='date' onChange={handleDateChange}>
-                        <option label='選択なし' value=''>
-                          選択なし
+                        <option label='Please select' value=''>
+                          Please select
                         </option>
                         {Array.from({ length: 31 }, (_, i) => i + 1).map(
                           (number) => (
@@ -353,7 +353,7 @@ export default function Page() {
                         )}
                       </select>
                       <label htmlFor={col.key + '_date'} className='u-pa-10'>
-                        日
+                        Day
                       </label>
                     </div>
                   )}
@@ -464,8 +464,8 @@ export default function Page() {
                   onChange={handleConditionCheck}
                 />
                 <label htmlFor='privacy'>
-                  <Link href='#'>利用規約</Link>及び
-                  <Link href='/privacy'>プライバシーポリシー</Link>に同意する
+                  I agree to the <Link href='#'>Terms of Service</Link> and{' '}
+                  <Link href='/privacy'>Privacy Policy</Link>
                 </label>
               </div>
               <button
@@ -473,7 +473,7 @@ export default function Page() {
                 id='inquiry_item_button_confirm'
                 className='c-button--primary u-width-100'
               >
-                確認する
+                Submit
               </button>
             </form>
           </div>

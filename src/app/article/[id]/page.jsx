@@ -39,7 +39,7 @@ export default async function Page({ params }) {
       href: `/article?topic=${item.contents_type_nm.toLowerCase()}`,
       label: item.contents_type_ext_col_01,
     },
-    { label: '記事詳細' },
+    { label: 'Article Details' },
   ];
 
   return (

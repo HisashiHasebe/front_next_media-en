@@ -40,9 +40,9 @@ export default function Page() {
   return (
     <main className='l-container'>
       <Metadata title={METADATA.LOGIN} />
-      <Breadcrumb paths={[{ label: 'ログイン' }]} />
+      <Breadcrumb paths={[{ label: 'Login' }]} />
 
-      <PageTitle title='ログイン' subTitle='Login' />
+      <PageTitle title='Login' subTitle='Login' />
       <div className='l-container--small l-container--contents'>
         <div className='flex min-h-screen flex-col items-center justify-between p-24'>
           {loading ? (
@@ -56,17 +56,17 @@ export default function Page() {
               onChange={handleChange}
             >
               {alert && (
-                <AlertError message='メールアドレスまたはパスワードが間違っています。' />
+                <AlertError message='Email address or password is incorrect.' />
               )}
               <div className='c-form-group'>
                 <label htmlFor='email' className='c-form-label'>
-                  メールアドレス
+                  Email Address
                 </label>
                 <input name='email' type='email' id='email' ref={email} />
               </div>
               <div className='c-form-group'>
                 <label htmlFor='password' className='c-form-label'>
-                  パスワード
+                  Password
                 </label>
                 <input
                   name='password'
@@ -77,16 +77,16 @@ export default function Page() {
               </div>
               <div className='c-form-group'>
                 <button type='submit' className='c-button--primary u-width-100'>
-                  ログイン
+                  Login
                 </button>
               </div>
               <div className='u-text-align-center u-mt-25'>
                 <Link href='/register' className=''>
-                  会員登録
+                  Sign Up
                 </Link>
-                または
+                {' '}or{' '}
                 <Link href='/reminder' className=''>
-                  パスワードをお忘れの方
+                  Forgot password?
                 </Link>
               </div>
             </form>

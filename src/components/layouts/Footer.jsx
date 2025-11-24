@@ -7,16 +7,16 @@ const Footer = () => {
         <nav className='l-footer__nav'>
           <ul className='l-footer__nav__list -menu'>
             <li>
-              <Link href='/privacy/'>プライバシーポリシー</Link>
+              <Link href='/privacy/'>Privacy Policy</Link>
             </li>
             <li>
-              <Link href='#'>利用規約</Link>
+              <Link href='#'>Terms of Service</Link>
             </li>
             <li>
-              <Link href='/contact/'>お問い合わせ</Link>
+              <Link href='/contact/'>Contact</Link>
             </li>
             <li>
-              <Link href='/sitemap.xml'>サイトマップ</Link>
+              <Link href='/sitemap.xml'>Sitemap</Link>
             </li>
           </ul>
           <ul className='l-footer__nav__list -sns'>

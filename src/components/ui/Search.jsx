@@ -15,13 +15,13 @@ export default function Search() {
       <form onSubmit={handleSubmit}>
         <button
           type='submit'
-          aria-label='検索'
+          aria-label='Search'
           className='l-header__nav__searchButton'
         ></button>
         <label>
           <input
             type='text'
-            placeholder='キーワードを入力'
+            placeholder='Enter keyword'
             className='l-header__nav__searchText'
             value={searchTerm}
             onChange={handleInputChange}

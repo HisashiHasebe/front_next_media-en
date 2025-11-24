@@ -50,8 +50,8 @@ export default function Page() {
   return (
     <main className='l-container'>
       <Metadata title={METADATA.REGISTER} />
-      <Breadcrumb paths={[{ label: '会員登録' }]} />
-      <PageTitle title='会員登録' subTitle='Register' />
+      <Breadcrumb paths={[{ label: 'Sign Up' }]} />
+      <PageTitle title='Sign Up' subTitle='Register' />
       <div className='l-container--small l-container--contents'>
         <form
           className='c-form'
@@ -60,28 +60,28 @@ export default function Page() {
         >
           <div className='c-form-group u-text-align-center'>
             <p className='c-text--small'>
-              <span className='c-form-label__required'>*</span>は必須項目です。
+              <span className='c-form-label__required'>*</span> indicates required fields.
             </p>
           </div>
           {alert && (
-            <AlertError message='エントリー内容を再度ご確認ください。' />
+            <AlertError message='Please check your entry again.' />
           )}
           <div className='c-form-group'>
             <label htmlFor='name1' className='c-form-label'>
-              名前（姓）
+              Last Name
             </label>
             <span className='c-form-label__required'>*</span>
             <input name='name1' type='text' id='name1' ref={name1} />
           </div>
           <div className='c-form-group'>
             <label htmlFor='name2' className='c-form-label'>
-              名前（名）
+              First Name
             </label>
             <input name='name2' type='text' id='name2' ref={name2} />
           </div>
           <div className='c-form-group'>
             <label htmlFor='email' className='c-form-label'>
-              メールアドレス
+              Email Address
             </label>
             <input name='email' type='email' ref={email} />
           </div>
@@ -89,11 +89,11 @@ export default function Page() {
             <div className='u-display-flex'>
               <div className='u-display-flex-grow-1'>
                 <label htmlFor='login_pwd' className='c-form-label'>
-                  パスワード
+                  Password
                 </label>
                 <span className='c-form-label__required u-ml-5'>*</span>
               </div>
-              <p className='u-ma-0 c-text--small'>半角英数8文字以上</p>
+              <p className='u-ma-0 c-text--small'>At least 8 alphanumeric characters</p>
             </div>
             <input
               name='login_pwd'
@@ -104,19 +104,18 @@ export default function Page() {
           </div>
           <div className='c-form-group'>
             <button type='submit' className='c-button--primary u-width-100'>
-              登録
+              Register
             </button>
           </div>
           <div className='c-form-group u-text-align-center'>
-            すでに会員の方は
+            Already a member?{' '}
             <Link href='/login' className='nuxt-link-active'>
-              ログイン
+              Login
             </Link>
           </div>
           <p className='c-text--small u-mt-25'>
-            続行することで<Link href='#'>利用規約</Link>及び
-            <Link href='/privacy'>プライバシーポリシー</Link>
-            に同意したこととなります。
+            By continuing, you agree to our <Link href='#'>Terms of Service</Link> and{' '}
+            <Link href='/privacy'>Privacy Policy</Link>.
           </p>
         </form>
       </div>

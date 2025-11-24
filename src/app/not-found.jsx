@@ -24,7 +24,7 @@ export default function NotFound() {
   return (
     <div className='c-error'>
       <h2>404 Not Found</h2>
-      <p>ページが見つかりませんでした</p>
+      <p>Page not found</p>
       <Link href='/' className='c-button'>
         TOP
       </Link>
