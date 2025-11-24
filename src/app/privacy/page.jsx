@@ -16,7 +16,7 @@ export default function Page() {
           <h2 className='c-heading--lv2 u-mb-30'>Personal Information Protection Policy</h2>
           <p>This is dummy data.</p>
           <p>
-            We deeply recognize that our customers' personal information constitutes important information that comprises privacy, and when handling personal information in our business operations, we shall establish internal regulations regarding laws and regulations related to personal information and the protection of personal information, and organize an organizational structure to strive for appropriate protection of personal information, thereby respecting our customers and meeting their expectations and trust in us.
+            We deeply recognize that our customers&apos; personal information constitutes important information that comprises privacy, and when handling personal information in our business operations, we shall establish internal regulations regarding laws and regulations related to personal information and the protection of personal information, and organize an organizational structure to strive for appropriate protection of personal information, thereby respecting our customers and meeting their expectations and trust in us.
           </p>
           <h3 className='c-heading--lv3'>Collection, Use, and Provision of Personal Information</h3>
           <p>

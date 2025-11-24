@@ -59,7 +59,7 @@ export default function Page() {
           {/* Member only content */}
           <section>
             <div className='c-heading--border-horizontal'>
-              <h2 className='c-heading--lv3 u-mb-0'>This Month's Members-Only Articles</h2>
+              <h2 className='c-heading--lv3 u-mb-0'>This Month&apos;s Members-Only Articles</h2>
             </div>
             <ul className='c-media-list c-media-list--col-2'>
               {limitedContent &&

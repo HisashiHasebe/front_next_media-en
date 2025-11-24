@@ -37,7 +37,7 @@ const LimitedContentBody = () => {
   return (
     <>
       <div className='c-heading--border-horizontal'>
-        <p className='c-heading--lv3 u-mt-0 u-mb-0'>This Month's Members-Only Articles</p>
+        <p className='c-heading--lv3 u-mt-0 u-mb-0'>This Month&apos;s Members-Only Articles</p>
       </div>
       <article className='c-article u-mt-0'>
         <Metadata title={METADATA.LIMITED_CONTENT} />
