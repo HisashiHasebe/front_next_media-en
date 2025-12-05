@@ -19,7 +19,7 @@ export default async function Page() {
           <div className='u-display-flex u-display-flex-align-items-center u-mb-40'>
             <div className='u-display-flex-grow-1'>
               <h2 className='c-heading--lv1'>New Articles</h2>
-              <p className='c-heading--sub'>New articles</p>
+              <p className='c-heading--sub'></p>
             </div>
             <div className='u-display-flex-shrink-0'>
               <Link href='/article/' className='c-button'>

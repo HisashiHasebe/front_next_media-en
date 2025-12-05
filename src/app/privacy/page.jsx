@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <main className='l-container'>
       <Breadcrumb paths={[{ label: 'Privacy Policy' }]} />
-      <PageTitle title='Privacy Policy' subTitle='PRIVACY POLICY' />
+      <PageTitle title='Privacy Policy' subTitle='' />
       <div className='l-container--large l-container--contents'>
         <article className='c-privacy'>
           <h2 className='c-heading--lv2 u-mb-30'>Personal Information Protection Policy</h2>

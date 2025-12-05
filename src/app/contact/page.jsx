@@ -201,7 +201,7 @@ export default function Page() {
       <Metadata title={METADATA.CONTACT} />
       <Breadcrumb paths={[{ label: 'Contact' }]} />
 
-      <PageTitle title='Contact' subTitle='Contact' />
+      <PageTitle title='Contact' subTitle='' />
       <div className='l-container--small l-container--contents'>
         {submittedText ? (
           <div>

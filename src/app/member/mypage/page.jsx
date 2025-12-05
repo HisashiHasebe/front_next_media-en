@@ -86,7 +86,7 @@ export default function Page() {
     <main className='l-container'>
       <Metadata title={METADATA.MEMBER_MYPAGE} />
       <Breadcrumb paths={[{ label: 'My Page' }]} />
-      <PageTitle title='My Page' subTitle='My page' />
+      <PageTitle title='My Page' subTitle='' />
       <div className='l-container--col-2 l-container--contents'>
         <div className='l-container--col-2__main'>
           {/* Member only content */}
@@ -131,7 +131,7 @@ export default function Page() {
           </section>
           <section className='c-favoriteList l-container--contents'>
             <h2 className='c-heading--lv1'>Favorite Articles</h2>
-            <p className='c-heading--sub'>Favorite articles</p>
+            <p className='c-heading--sub'></p>
             <div className='u-mt-40'>
               {myFavorites.length === 0 ? (
                 <p>You have no favorite articles.</p>

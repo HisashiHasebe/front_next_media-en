@@ -75,7 +75,7 @@ export default function Page() {
     <main className='l-container'>
       <Metadata title={METADATA.MEMBER_UPDATE} />
       <Breadcrumb paths={[{ label: 'Account Information' }]} />
-      <PageTitle title='Account Information' subTitle='Edit Profile' />
+      <PageTitle title='Account Information' subTitle='' />
       <div className='l-container--col-2 l-container--contents'>
         <div className='l-container--col-2__main'>
           <form

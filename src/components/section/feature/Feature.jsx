@@ -25,7 +25,7 @@ export default function Feature() {
     <section className='l-container--contents'>
       <div className='u-mb-40'>
         <h2 className='c-heading--lv1'>Features</h2>
-        <p className='c-heading--sub'>Features</p>
+        <p className='c-heading--sub'></p>
       </div>
       <ul className='c-banner-list c-banner-list--col-2'>
         {data.map((item, index) => (

@@ -55,7 +55,7 @@ export default function Article({ children }) {
       const { list, pageInfo } = await getContentList(params);
       setList(list);
       setPageInfo(pageInfo);
-      setCategoryTitle(list?.[0]?.contents_type_ext_col_01);
+      setCategoryTitle(list?.[0]?.contents_type_nm);
     }
     fetchData();
   }, [searchParams]);
@@ -88,7 +88,7 @@ export default function Article({ children }) {
       />
       <PageTitle
         title={content ? content.title : categoryTitle}
-        subTitle={content ? content.subtitle : list?.[0]?.contents_type_nm}
+        subTitle={content ? content.subtitle : ''}
       />
       <div className='l-container--large l-container--contents'>
         <main>
