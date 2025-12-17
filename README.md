@@ -1,25 +1,3 @@
----
-name: Kuroco Media Sample Site
-slug: kuroco-media-nextjs
-publisher: Diverta
-description: A modern media sample site built with Next.js and Kuroco headless CMS. Includes blog, member features, and content management.
-framework:
-  - Next.js
-type:
-  - Blog
-  - CMS
-  - Starter
-css:
-  - Tailwind
-githubUrl: https://github.com/diverta/front_next_media
-demoUrl: https://dev-next-media.g.kuroco-front.app
-deployUrl: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdiverta%2Ffront_next_media&env=NEXT_PUBLIC_BASE_URL,NEXT_PUBLIC_FRONT_URL&envDescription=Kuroco%20API%20configuration%20required&envLink=https%3A%2F%2Fkuroco.app%2Fdocs%2Ftutorials%2Fkuroco-media-sample-site%2F
-relatedTemplates:
-  - blog
-  - cms-contentful
-  - cms-sanity
----
-
 # Kuroco Media Sample Site
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdiverta%2Ffront_next_media&env=NEXT_PUBLIC_BASE_URL,NEXT_PUBLIC_FRONT_URL&envDescription=Kuroco%20API%20configuration%20required&envLink=https%3A%2F%2Fkuroco.app%2Fdocs%2Ftutorials%2Fkuroco-media-sample-site%2F&demo-title=Kuroco%20Media%20Sample&demo-description=A%20media%20sample%20site%20built%20with%20Next.js%20and%20Kuroco%20CMS&demo-url=https%3A%2F%2Fdev-next-media.g.kuroco-front.app%2F)
@@ -214,10 +192,6 @@ Manage your content through the Kuroco admin panel:
 - [Kuroco Media Sample Tutorial](https://kuroco.app/docs/tutorials/kuroco-media-sample-site/)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Vercel Documentation](https://vercel.com/docs)
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ## 📄 License
 

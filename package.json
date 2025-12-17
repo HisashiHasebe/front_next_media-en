@@ -1,24 +1,6 @@
 {
   "name": "next-media",
   "version": "0.1.0",
-  "description": "A modern media sample site built with Next.js and Kuroco headless CMS",
-  "keywords": [
-    "nextjs",
-    "react",
-    "tailwindcss",
-    "kuroco",
-    "headless-cms",
-    "blog",
-    "media-site",
-    "cms",
-    "vercel"
-  ],
-  "author": "Diverta Inc.",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/diverta/front_next_media.git"
-  },
   "private": true,
   "scripts": {
     "dev": "next dev",
