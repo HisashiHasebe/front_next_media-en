@@ -1,6 +1,28 @@
+---
+name: Kuroco Media Sample Site
+slug: kuroco-media-nextjs
+publisher: Diverta
+description: A modern media sample site built with Next.js and Kuroco headless CMS. Includes blog, member features, and content management.
+framework:
+  - Next.js
+type:
+  - Blog
+  - CMS
+  - Starter
+css:
+  - Tailwind
+githubUrl: https://github.com/diverta/front_next_media
+demoUrl: https://dev-next-media.g.kuroco-front.app
+deployUrl: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdiverta%2Ffront_next_media&env=NEXT_PUBLIC_BASE_URL,NEXT_PUBLIC_FRONT_URL&envDescription=Kuroco%20API%20configuration%20required&envLink=https%3A%2F%2Fkuroco.app%2Fdocs%2Ftutorials%2Fkuroco-media-sample-site%2F
+relatedTemplates:
+  - blog
+  - cms-contentful
+  - cms-sanity
+---
+
 # Kuroco Media Sample Site
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdiverta%2Ffront_next_media&env=NEXT_PUBLIC_BASE_URL&envDescription=Kuroco%20API%20configuration%20required&envLink=https%3A%2F%2Fkuroco.app%2Fdocs%2Ftutorials%2Fkuroco-media-sample-site%2F&demo-title=Kuroco%20Media%20Sample&demo-description=A%20media%20sample%20site%20built%20with%20Next.js%20and%20Kuroco%20CMS&demo-url=https%3A%2F%2Fdev-next-media.g.kuroco-front.app%2F)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdiverta%2Ffront_next_media&env=NEXT_PUBLIC_BASE_URL,NEXT_PUBLIC_FRONT_URL&envDescription=Kuroco%20API%20configuration%20required&envLink=https%3A%2F%2Fkuroco.app%2Fdocs%2Ftutorials%2Fkuroco-media-sample-site%2F&demo-title=Kuroco%20Media%20Sample&demo-description=A%20media%20sample%20site%20built%20with%20Next.js%20and%20Kuroco%20CMS&demo-url=https%3A%2F%2Fdev-next-media.g.kuroco-front.app%2F)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/diverta/front_next_media)
 
 A modern media sample site built with Next.js and [Kuroco](https://kuroco.app/) headless CMS. This template demonstrates how to create a fully functional media site with content management capabilities.
@@ -84,14 +106,18 @@ Before deployment, prepare your environment variables:
 
 Click the deploy button below to create your own copy:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdiverta%2Ffront_next_media&env=NEXT_PUBLIC_BASE_URL&envDescription=Kuroco%20API%20configuration%20required&envLink=https%3A%2F%2Fkuroco.app%2Fdocs%2Ftutorials%2Fkuroco-media-sample-site%2F)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdiverta%2Ffront_next_media&env=NEXT_PUBLIC_BASE_URL,NEXT_PUBLIC_FRONT_URL&envDescription=Kuroco%20API%20configuration%20required&envLink=https%3A%2F%2Fkuroco.app%2Fdocs%2Ftutorials%2Fkuroco-media-sample-site%2F)
 
 **Deployment Steps:**
-1. During deployment, you'll be prompted to enter your `NEXT_PUBLIC_BASE_URL` value from Step 2
-2. Complete the initial deployment
-3. After deployment, go to your Vercel project settings → Environment Variables
-4. Add `NEXT_PUBLIC_FRONT_URL` with your deployed URL (e.g., `https://your-app.vercel.app`)
-5. Redeploy the application for the changes to take effect (go to Deployments → click the three dots → Redeploy)
+1. Click the deploy button above
+2. You'll be prompted to enter both environment variables:
+   - `NEXT_PUBLIC_BASE_URL`: Your Kuroco API domain (from Step 2)
+   - `NEXT_PUBLIC_FRONT_URL`: Leave empty for now, you'll add it after deployment
+3. Complete the initial deployment
+4. After deployment completes, copy your Vercel deployment URL (e.g., `https://your-app.vercel.app`)
+5. Go to your Vercel project settings → Environment Variables
+6. Update `NEXT_PUBLIC_FRONT_URL` with your deployment URL
+7. Redeploy the application (go to Deployments → click the three dots → Redeploy)
 
 ### Step 4: Configure CORS
 
