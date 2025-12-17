@@ -31,10 +31,10 @@ A modern media sample site built with Next.js and [Kuroco](https://kuroco.app/) 
 
 ## 🛠 Tech Stack
 
-- **Frontend**: Next.js 15.3.2, React 19.1.0
+- **Frontend**: Next.js 15.5.7, React 19.2.1
 - **Styling**: Tailwind CSS 3.4.17, Sass 1.69.5
 - **Backend**: Kuroco CMS (Headless CMS)
-- **Deployment**: Any hosting service
+- **Deployment**: Vercel
 - **Additional**: clsx for conditional styling
 
 ## 🚀 Getting Started
@@ -69,13 +69,16 @@ For detailed setup instructions, follow the [Kuroco Media Sample Site Tutorial](
 
 ### Step 2: Configure Environment Variables
 
-Before deployment, prepare your environment variable:
+Before deployment, prepare your environment variables:
 
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `NEXT_PUBLIC_BASE_URL` | Your Kuroco API domain | `https://your-instance.a.kuroco.app` |
+| Variable | Description | Example | Required |
+|----------|-------------|---------|----------|
+| `NEXT_PUBLIC_BASE_URL` | Your Kuroco API domain | `https://your-instance.a.kuroco.app` | Yes (during deployment) |
+| `NEXT_PUBLIC_FRONT_URL` | Your frontend URL | `https://your-app.vercel.app` | Yes (after deployment) |
 
-*You can find your API domain in Account Settings or the Endpoint List page in your Kuroco admin panel.
+**Note:**
+- `NEXT_PUBLIC_BASE_URL` can be found in Account Settings or the Endpoint List page in your Kuroco admin panel
+- `NEXT_PUBLIC_FRONT_URL` will be your Vercel deployment URL - you'll add this after the initial deployment (see Step 3)
 
 ### Step 3: Deploy
 
@@ -83,7 +86,12 @@ Click the deploy button below to create your own copy:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdiverta%2Ffront_next_media&env=NEXT_PUBLIC_BASE_URL&envDescription=Kuroco%20API%20configuration%20required&envLink=https%3A%2F%2Fkuroco.app%2Fdocs%2Ftutorials%2Fkuroco-media-sample-site%2F)
 
-During deployment, you'll be prompted to enter your `NEXT_PUBLIC_BASE_URL` value from Step 2.
+**Deployment Steps:**
+1. During deployment, you'll be prompted to enter your `NEXT_PUBLIC_BASE_URL` value from Step 2
+2. Complete the initial deployment
+3. After deployment, go to your Vercel project settings → Environment Variables
+4. Add `NEXT_PUBLIC_FRONT_URL` with your deployed URL (e.g., `https://your-app.vercel.app`)
+5. Redeploy the application for the changes to take effect (go to Deployments → click the three dots → Redeploy)
 
 ### Step 4: Configure CORS
 
@@ -113,8 +121,12 @@ cd front_next_media
 npm install
 
 # Configure environment variables
-# Edit .env file and set your Kuroco API domain
-NEXT_PUBLIC_BASE_URL=https://your-instance.a.kuroco.app
+# Copy .env.example to .env and edit the values
+cp .env.example .env
+
+# Edit .env file and set your environment variables:
+# NEXT_PUBLIC_BASE_URL=https://your-instance.a.kuroco.app
+# NEXT_PUBLIC_FRONT_URL=http://localhost:3000
 
 # Start development server
 npm run dev
@@ -162,12 +174,12 @@ Manage your content through the Kuroco admin panel:
 1. Log in to your Kuroco instance
 2. Navigate to the content management section
 3. Create and edit your media content
-4. Enable "GitHub Actions workflow" for automatic deployment
+4. Changes will trigger automatic rebuilds on Vercel
 
 ### SSG (Static Site Generation)
 
 - Article lists and detail pages use SSG for optimal performance
-- Content updates trigger automatic rebuild via GitHub Actions
+- Content updates trigger automatic rebuilds on Vercel
 - Reduces API requests and improves page load times
 
 ## 📚 Documentation
@@ -202,4 +214,4 @@ After deployment, you can:
 2. **Add new features** - Extend functionality as needed
 3. **Configure SEO** - Optimize meta tags and structured data
 4. **Set up analytics** - Track your site performance
-5. **Implement CI/CD** - Automate deployments with GitHub Actions
+5. **Add custom domain** - Configure your own domain in Vercel settings
